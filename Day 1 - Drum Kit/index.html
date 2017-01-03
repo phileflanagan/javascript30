@@ -60,7 +60,17 @@
 
 <script>
   window.addEventListener('keydown', function(e) {
-    console.log(e.keyCode);
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+
+    // If key press does not correspond to audio, break out of function
+    if(!audio) return;
+
+    // Play audio
+    audio.currentTime = 0;
+    audio.play();
+
+    console.log(key);
   });
 </script>
 
