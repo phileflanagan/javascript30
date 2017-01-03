@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+  background: radial-gradient(circle, #666, #333);
   background-size: cover;
 }
 body,html {
@@ -9,22 +9,37 @@ body,html {
   font-family: sans-serif;
 }
 
+.drumkit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.title {
+  font-size: 5rem;
+  color: #f0f0f0;
+  border: 0.5rem solid #f0f0f0;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 0.75rem;
+  padding: 0.5rem 1.5rem;
+}
 .keys {
   display: flex;
-  flex: 1;
-  min-height: 100vh;
   align-items: center;
   justify-content: center;
 }
 
 .key {
-  border: .4rem solid black;
-  border-radius: .5rem;
+  border: .4rem solid #333;
+  border-radius: 50%;
   margin: 1rem;
   font-size: 1.5rem;
-  padding: 1rem .5rem;
+  padding: 0.5rem 0.5rem;
   transition: all .07s ease;
-  width: 10rem;
+  width: 7rem;
+  height: 7rem;
   text-align: center;
   color: white;
   background: rgba(0,0,0,0.4);
@@ -39,11 +54,12 @@ body,html {
 
 kbd {
   display: block;
+  margin-bottom: 0;
   font-size: 4rem;
 }
 
 .sound {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
