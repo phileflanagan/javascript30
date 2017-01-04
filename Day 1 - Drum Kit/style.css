@@ -1,6 +1,7 @@
 html {
+  /*wzj86-5JVcM*/
   font-size: 10px;
-  background: #3f5b7a;
+  background: url(https://images.unsplash.com/photo-1423110041833-0d5dfcc552e1?q=40&blur=300), #35374a;
   background-size: cover;
 }
 body,html {
@@ -32,7 +33,7 @@ body,html {
 }
 
 .key {
-  border: .4rem solid #6789af;
+  border: .4rem solid #4a3e35;
   border-radius: 50%;
   margin: 1rem;
   font-size: 1.5rem;
