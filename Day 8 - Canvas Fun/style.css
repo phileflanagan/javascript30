@@ -1,3 +1,25 @@
 html, body {
   margin:0;
+  background-color: #dead45;
+  text-align: center;
+}
+
+.top-header {
+  height: 60px;
+  line-height: 60px;
+  font-family: 'Amatic SC', cursive;
+}
+
+.title {
+  font-size: 44px;
+  margin: 0;
+  text-align: center;
+  color: royalblue;
+}
+
+canvas {
+  display: inline-block;
+  margin: 0 auto;
+  border: 5px solid khaki;
+  background-color: #f5f5f5;
 }
