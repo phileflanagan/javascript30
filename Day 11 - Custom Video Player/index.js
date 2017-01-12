@@ -5,7 +5,8 @@ const progressBar = player.querySelector('.progress__filled');
 const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const volume = player.querySelector('.player__slider');
-const playback = player.querySelector('.playback')
+const playback = player.querySelector('.playback');
+const fullscreen = player.querySelector('.fullscreen');
 
 function togglePlay() {
   video[video.paused ? 'play' : 'pause']();
@@ -54,6 +55,7 @@ function scrub(e) {
   const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
   video.currentTime = scrubTime;
 }
+
 
 window.addEventListener('keydown', handleKeyboard);
 
