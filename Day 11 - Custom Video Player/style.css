@@ -93,11 +93,21 @@ body {
 }
 
 .playback {
-  background: black;
+  background: transparent;
   color: white;
   max-width: 70px;
   border: none;
   text-align: center;
+}
+
+.playback option {
+  color: black;
+  font-weight: bold;
+  background-color: #ffc600;
+}
+
+select:focus {
+  outline: none;
 }
 
 /* unholy css to style input type="range" */
