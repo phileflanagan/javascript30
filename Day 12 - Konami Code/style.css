@@ -1,0 +1,47 @@
+.konami {
+  display: block;
+  background-color: rgba(0,0,0,0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.konami img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+
+.konami .img-wrap {
+  display: inline-block;
+  position: relative;
+  margin: 2rem;
+  cursor: pointer;
+}
+
+.konami .img-wrap::after {
+  content: "\d7";
+  background-color: rgba(0,0,0,0.6);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bolder;
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  border: 0.2rem solid white;
+  border-radius: 50%;
+}
+
+.konami .img-wrap:hover::after {
+  background-color: rgba(70,70,70,0.6);
+}
