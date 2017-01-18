@@ -11,14 +11,9 @@ function shadow(e) {
     y += e.target.offsetTop;
   }
 
-  // console.dir(this);
   const xCenter = ( left + width) / 2;
   const yCenter = ( top + height) / 2;
-  console.log(e.pageX);
-  console.log(this.offsetLeft);
   const angle = Math.atan2((e.pageX - xCenter), -(e.pageY - yCenter)) * (180/Math.PI);
-
-  // console.log(angle);
 
   const xWalk = Math.round((x / width * walk) - (walk / 2));
   const yWalk = Math.round((y / height * walk) - (walk / 2));
